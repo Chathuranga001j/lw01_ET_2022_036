@@ -1,4 +1,18 @@
 package LW_03;
 
+import java.util.Scanner;
+
 public class Q2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double f = sc.nextDouble();
+
+        Temperature t = new Temperature();
+        t.setFahrenheit(f);
+
+        System.out.printf("Equivalent in Celsius: %.2f°C%n", t.toCelsius());
+
+        sc.close();
+    }
 }
